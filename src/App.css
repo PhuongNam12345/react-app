@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -21,9 +21,13 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(236, 153, 153);
+  padding: 10px;
 }
+.App-header h3{
+  color: red;
 
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +39,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App-email{
+margin-left: 20px;
 }
