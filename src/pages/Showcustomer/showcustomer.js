@@ -10,7 +10,7 @@ export const Showcustomer = () => {
     const [customers, setCustomers] = useState([]);
   
   useEffect(() => {
-    fetch("http://localhost:5000/peoplee")
+    fetch("http://localhost:5000/showcustomer")
       .then(response => response.json())
       .then(data => setCustomers(data))
       .catch(error => console.error(error));
