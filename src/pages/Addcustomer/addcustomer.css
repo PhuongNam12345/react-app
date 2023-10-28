@@ -1,123 +1,115 @@
-.app{
+.app {
     width: 100%;
     height: 100%;
     position: relative;
     display: flex;
     /* padding: 40px 0; */
-    }
-    .icon{
-      position: absolute;
+}
+.icon {
+    position: absolute;
     flex-shrink: 0;
     stroke-width: 100px;
-    stroke: #4E7577;
+    stroke: #4e7577;
     /* opacity: 0.05; */
-    }
-    .icon svg{
-      max-width: 100%;
-      max-height: 100%;
-    }
-    .header{
-    width:100%;
+}
+.icon svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+.header {
+    width: 100%;
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
-    .menu{
-      padding: 10px 150px;
-      
-    }
-    .header p{
+}
+.menu {
+    padding: 10px 150px;
+}
+.header p {
     padding: 10px 95px;
     font-family: Space Grotesk;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 100% */
-    background: linear-gradient(93deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    background: linear-gradient(93deg, #496f74 -3.47%, #6e9195 35.61%, #2d4f61 84.29%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    }
-    .content {
-      /* position: absolute; */
+}
+.content {
+    /* position: absolute; */
     width: 100%;
     /* padding: 40px 0; */
-    
-    display: flex;
-    }
-    .content_left{
 
+    display: flex;
+}
+.content_left {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    }
-    .content_right{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    background: linear-gradient(162deg, #517879 4.83%, #1E3E57 103.44%);
-    }
-    .header .text_title {
-    
+}
+.content_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(162deg, #517879 4.83%, #1e3e57 103.44%);
+}
+.header .text_title {
     font-family: Space Grotesk;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0em;
-    background: linear-gradient(93deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    background: linear-gradient(93deg, #496f74 -3.47%, #6e9195 35.61%, #2d4f61 84.29%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-    
-    }
-    .content_left .form .text_content{
-        text-align: center;
-      margin-top:80px;
+}
+.content_left .form .text_content {
+    text-align: center;
+    margin-top: 80px;
     color: #000;
     font-family: Space Grotesk;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 36px; /* 150% */
-    
-    }
-    .form{
-    display:flex ;
+}
+.form {
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    gap:12px;
+    gap: 12px;
     width: 50%;
-    }
-    .form-group{
+}
+.form-group {
     display: flex;
     flex-direction: column;
-    }
-    .form .form-group label{
+}
+.form .form-group label {
     /* width: 73px;
     height: 24px; */
     top: 316px;
     /* left: 194px; */
-    }
-    .form .form-group input{
+}
+.form .form-group input {
     padding: 12px 16px;
     border-radius: 4px;
-    border: 1px solid #CCC;
-    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.10);
-    
-    }
-    .form .form-group .select{
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
+}
+.form .form-group .select {
     padding: 12px 16px;
     border-radius: 4px;
-    border: 1px solid #CCC;
-    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.10);
-    }
-    .form .form-group p{
-    color: #CCC;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
+}
+.form .form-group p {
+    color: #ccc;
     font-family: Space Grotesk;
     font-size: 12px;
     font-style: normal;
@@ -125,48 +117,47 @@
     line-height: 16px;
     padding: auto;
     margin-block-start: 0em;
-    margin-block-end:0em;
-    
-    }
-    .form .addcustomer{
+    margin-block-end: 0em;
+}
+.form .addcustomer {
     border-radius: 4px;
     border: 1px solid #619a54;
     background: #6daf65;
-    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.10);
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
     padding: 12px 16px;
     width: 100%;
-    color: #FFF;
+    color: #fff;
     font-family: Space Grotesk;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 150% */
-    }
-    .form .signup{
+}
+.form .signup {
     border-radius: 4px;
-    border: 1px solid #284A5E;
-    background: #27485D;
-    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.10);
+    border: 1px solid #284a5e;
+    background: #27485d;
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
     padding: 12px 16px;
     width: 100%;
-    color: #FFF;
+    color: #fff;
     font-family: Space Grotesk;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 150% */
-    }
-    .login p{
-    color: #C4C4C4;
+}
+.login p {
+    color: #c4c4c4;
     font-family: Space Grotesk;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 150% */
     text-align: center;
-    }
-    .login a{
-    color: #476D73;
+}
+.login a {
+    color: #476d73;
     font-family: Space Grotesk;
     font-size: 16px;
     font-style: normal;
@@ -174,21 +165,26 @@
     line-height: 24px; /* 150% */
     text-decoration-line: underline;
     margin-left: 5px;
-    }
-    .content_right_text{
+}
+.content_right_text {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 90px;
-    
-    }
-    .menu {
+}
+.select_op {
+    font-size: 16px;
+    padding: 10px;
+    font-family: Space grotesk;
+    color: #476d73;
+}
+.menu {
     list-style: none;
-    }
-    .menu li {
+}
+.menu li {
     display: inline;
-    }
-    .menu li a{
+}
+.menu li a {
     text-decoration: none;
     padding: 10px;
     color: #100e0e;
@@ -197,9 +193,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 150% */
-    }
-    .content_right .p_sub p{
-    color: #FFF;
+}
+.content_right .p_sub p {
+    color: #fff;
     font-family: Space Grotesk;
     font-size: 64px;
     font-style: normal;
@@ -208,10 +204,9 @@
     width: 80%;
     text-shadow: 2px 2px #8f8787;
     margin-block-start: 0em;
-    margin-block-end:0em;
-    }
-    .content_right .p_sub_sub{
-    
+    margin-block-end: 0em;
+}
+.content_right .p_sub_sub {
     color: #f5f0f0;
     font-family: Space Grotesk;
     font-size: 16px;
@@ -219,94 +214,91 @@
     font-weight: 700;
     line-height: 24px; /* 150% */
     margin-block-start: 0em;
-    margin-block-end:0em;
-    }
-    
-    
-    @keyframes App-logo-spin {
+    margin-block-end: 0em;
+}
+
+@keyframes App-logo-spin {
     from {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-    transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-    }
-    @media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 600px) {
     .app {
-    width: 100%;
-    display: flex;
-    flex-direction: column;}
-    .header{
-      position: relative;
-      display: flex;
-      justify-content: space-around;
-      padding:0;
-    }
-    .menu li a{
-      color: #24445B;
-    font-family: Space Grotesk;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 171.429% */
-    }
-    .icon svg{
-      max-width: 100%;
-      max-height: 100%;
-    
-    }
-    .menu{
-      padding: 0;
-    }
-    .header p{
-      padding: 0;
-    }
-    .content{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
- /* .content_login{
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .menu li a {
+        color: #24445b;
+        font-family: Space Grotesk;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 171.429% */
+    }
+    .icon svg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .menu {
+        padding: 0;
+    }
+    .header p {
+        padding: 0;
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* .content_login{
     background-color: red;
  } */
-    .header .text_title p{
-    font-family: Space Grotesk;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 100% */
-    background: linear-gradient(93deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+    .header .text_title p {
+        font-family: Space Grotesk;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 100% */
+        background: linear-gradient(93deg, #496f74 -3.47%, #6e9195 35.61%, #2d4f61 84.29%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .form-group{
-    gap: 5px;
+    .form-group {
+        gap: 5px;
     }
-    .form{
-    display:flex ;
-    
-    flex-direction: column;
-    gap:15px;
-    width: 80%;
+    .form {
+        display: flex;
+
+        flex-direction: column;
+        gap: 15px;
+        width: 80%;
     }
-    .form .text_content{
-      margin-top: 5px;
+    .form .text_content {
+        margin-top: 5px;
     }
-    .content .content_left{
-    width: 100%;
+    .content .content_left {
+        width: 100%;
     }
-    .content_right{
-      display: none;
+    .content_right {
+        display: none;
     }
-    .form .text_content p{
-    color: #24445B;
-    font-family: Space Grotesk;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px; /* 200% */
+    .form .text_content p {
+        color: #24445b;
+        font-family: Space Grotesk;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px; /* 200% */
     }
-    }
-    
+}
