@@ -16,6 +16,8 @@ function App() {
         return <div>You are unauthorized to access this page. {role}</div>;
     };
     const Logout = () => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('role');
         return <Navigate to="/login" replace={true} />;
     };
 

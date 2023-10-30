@@ -8,6 +8,7 @@ export const Login = () => {
     const [status, setStatus] = useState(0);
     const [show, setShow] = useState(false);
     const [token, setToken] = useState('');
+
     const handleLogin = async () => {
         try {
             const response = await fetch('http://localhost:5000/login', {
@@ -26,10 +27,7 @@ export const Login = () => {
                 console.log(data);
                 const { token } = data;
                 const { role } = data;
-                console.log(token);
-                console.log(role);
-                const roles = localStorage.getItem('role');
-                console.log(roles);
+                // const roles = localStorage.getItem('role')
                 setToken(data);
                 // Lưu token vào localStorage
                 localStorage.setItem('token', token);
@@ -66,6 +64,10 @@ export const Login = () => {
     //   // Now you can navigate programmatically to other pages using navigate
     //   navigate('/login.js');
     // };
+    setTimeout(() => {
+        console.log('End after 2 âsseconds');
+    }, 2000);
+
     return (
         <div className="app">
             <div className="icon">
@@ -163,7 +165,8 @@ export const Login = () => {
                                     <AlertIcon className="icon_alert" />
                                     <AlertTitle> Success Login!!!</AlertTitle>
                                 </Alert>
-                                {/* <Navigate to="/showcustomer" replace={true} /> */}
+                                {setTimeout}
+                                <Navigate to="/showcustomer" replace={true} />
                             </>
                         ) : null}
                         {/* <Alert status="success">

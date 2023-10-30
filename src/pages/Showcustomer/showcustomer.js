@@ -100,8 +100,9 @@ export const Showcustomer = () => {
                         <li>
                             <Link to="/login">Contact</Link>
                         </li>
+                        <li>{localStorage.getItem('token') ? null : <Link to="/login">Login</Link>}</li>
                         <li>
-                            <Link to="/login">Login</Link>
+                            <Link to="/logout">Log out</Link>
                         </li>
                     </ul>
                 </div>

@@ -27,7 +27,7 @@ export const Register = () => {
             setStatus(200);
             setShow(true);
         } else {
-            console.log('Đăng nhập không thành công.');
+            console.log('False.', Error);
             setStatus(response.status);
             setShow(true);
         }
@@ -174,7 +174,7 @@ export const Register = () => {
                         {show === true && status === 200 ? (
                             <Alert status="success" variant="solid">
                                 <AlertIcon className="icon_alert" />
-                                <AlertTitle> Register Succe ^ ^</AlertTitle>
+                                <AlertTitle> Thank you for registering, please check your email</AlertTitle>
                             </Alert>
                         ) : null}
                         {/* <Alert status="success">

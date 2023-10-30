@@ -73,7 +73,7 @@ export const Addcustomer = () => {
                         <a href="news.asp">Contact</a>
                     </li>
                     <li>
-                        <Link to="/login">Logout</Link>
+                        <Link to="/logout">Logout</Link>
                     </li>
                 </ul>
             </div>
