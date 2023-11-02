@@ -15,27 +15,33 @@ export const Register = () => {
     const [show, setShow] = useState(false);
 
     const handleRegister = async () => {
-        const response = await fetch('http://localhost:5000/register', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ fullname, email, password, phone, address, role }),
-        });
-        if (response.status === 200) {
-            console.log(response);
-            setStatus(200);
-            setShow(true);
-        } else {
-            console.log('False.', Error);
-            setStatus(response.status);
-            setShow(true);
+        console.log('Register');
+        try {
+            const response = await fetch('http://localhost:8080/UserService/AddUser', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ fullname, email }),
+                // body: JSON.stringify({ fullname, email, password, phone, address, role }),
+            });
+            if (response.status === 200) {
+                console.log(response);
+                setStatus(200);
+                setShow(true);
+            } else {
+                console.log('False.', Error);
+                setStatus(response.status);
+                setShow(true);
+            }
+            // if (response.status === 200) {
+            //   console.log("Đăng ký thành công!NHA");
+            // } else {
+            //   console.log("Đăng ký không thành công.");
+            // }
+        } catch (err) {
+            console.log('lỗi r');
         }
-        // if (response.status === 200) {
-        //   console.log("Đăng ký thành công!NHA");
-        // } else {
-        //   console.log("Đăng ký không thành công.");
-        // }
     };
     return (
         <div className="app">
